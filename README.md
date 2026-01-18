@@ -1,35 +1,27 @@
-UE5 Tools Library
+## UE5 Tools Library
 
-A small, practical collection of Python tools for Unreal Engine 5 focused on editor-side automation and pipeline tasks (MRQ helpers, camera/sequence utilities, and other time-saving scripts). The goal is simple: ship reliable tools you can drop into your project and run, without over-engineering.
+A focused collection of **Python tools for Unreal Engine 5** for editor automation and pipeline workflows (MRQ helpers, camera/sequencer utilities, and other productivity scripts). The goal is simple: **reliable tools you can drop into a project and run**.
 
-This repo will keep growing over time as I add new utilities and improve existing ones.
+This repo will keep evolving as new utilities are added and existing ones get improved.
 
-What you’ll find
+### Tools included
+- **Movie Render Queue helpers**: automate MRQ job setup and rendering.
+- **Camera + Sequencer utilities**: generate cameras, create Level Sequences, batch workflows.
+- **Editor automation**: remove repetitive clicks and keep pipelines consistent.
 
-Movie Render Queue helpers: quick setup and automation around MRQ jobs.
+### Requirements
+- Unreal Engine 5
+- Python enabled (Editor Scripting Utilities recommended)
+- Movie Render Queue plugin (for MRQ scripts)
 
-Camera + Sequencer utilities: generate cameras, create Level Sequences, and batch workflows.
+### Usage
 
-Editor automation: scripts that remove repetitive clicks and keep pipelines consistent.
+Run scripts inside the UE5 Editor (Python console / Editor Utility).
 
-Requirements
-
-Unreal Engine 5 with Python enabled (Editor Scripting Utilities recommended).
-
-Usage
-
-Each script is meant to be run inside the UE5 Editor (Python console / editor utility). Some scripts require you to set your own asset paths or output directories.
-
-Requests / contributions
-
-Feature requests are welcome. If you need a tool or a specific workflow automated, open an issue with:
-
-what you’re trying to do,
-
-the UE version,
-
-expected inputs/outputs,
-
-and a minimal example.
-
-PRs are also welcome, but keep changes minimal and practical.
+**Option A: Python Console**
+1. UE5 → `Window > Developer Tools > Output Log`
+2. Switch to **Python** mode
+3. Run:
+```python
+import unreal
+unreal.log("Python ready")
